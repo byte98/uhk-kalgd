@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 Jiri Skoda <jiri.skoda@student.upce.cz>
+ * Copyright (C) 2021 Jiri Skoda <skodaji1@uhk.cz>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -16,8 +16,6 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 package cz.uhk.fim.skodaji1.kalgd.hw02;
-
-import java.util.Scanner;
 
 /**
  * Class representing second exercise of second homework
