@@ -15,38 +15,40 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
-package cz.uhk.fim.kalgd.hw01;
+package cz.uhk.fim.skodaji1.kalgd.hw01;
 
 import java.util.Scanner;
 
 /**
- * Class representing second exercise of first homework
+ * Class representing fourth exercise of first homework
  * @author Jiri Skoda <skodaji1@uhk.cz>
  */
-public class ex02 {
+public class ex04 {
 
     /**
-     * Main function of program which runs second exercise
+     * Main function of program which runs fourth exercise
      * @param args the command line arguments
      */
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
-        int input, sum = 0, max = Integer.MIN_VALUE;
-        do
+        Scanner input = new Scanner(System.in);
+        int p = input.nextInt();
+        int cislo;
+        int pocet = 0;
+        int i;
+        for (i = 1; i <= p; i = i + 1)
         {
-            input = scanner.nextInt();
-            if (input > 0 && input % 5 == 0)
+            cislo = input.nextInt();
+            if (cislo % 2 == 1)
             {
-                sum += input;
-                if (input > max)
+                pocet = pocet + 1;
+                if (pocet == 5)
                 {
-                    max = input;
+                    System.out.println(cislo);
+                    pocet = 0;
                 }
             }
         }
-        while (input != 0);
-        System.out.printf("Soucet: %d; maximum: %d", sum, max);
-    }
+    }   
     
 }
